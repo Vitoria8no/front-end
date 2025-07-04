@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import HelloWorld from'./components/Helloworld';
+
 
 function App() {
+
+const name = "matheus"
+const newname=name.toUpperCase()
+
+
+function sum(a,b) {
+  return a + b
+}
+  const url ="https://via.placeholder.com/150"
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+      <h2>alterando o jsx</h2>
+      <p>olá , {newname}</p>
+      <p>soma:{sum(1,2)}</p>
+      <img src={url} alt="minha imagem"/>
+      <HelloWorld/>
     </div>
   );
 }
